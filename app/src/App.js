@@ -8,6 +8,7 @@ import {
   Header,
   Navbar,
   Content,
+  Footer,
 } from './components';
 
 
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <Navbar setSelecetdOption={setSelecetdOption} selecetdOption={selecetdOption} />
       <Content selecetdOption={selecetdOption} />
+      <Footer />
     </div>
   );
 }
