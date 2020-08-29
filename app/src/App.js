@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
 
 // requests
-import requests from "./services/requests";
+import requests from './services/requests';
 
 // Components
-import Header from "./components/header";
+import {
+  Header,
+  Navbar
+} from './components';
 
 
 // Styles
@@ -14,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Navbar />
     </div>
   );
 }

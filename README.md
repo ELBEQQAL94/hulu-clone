@@ -13,15 +13,17 @@
 * [x] Create Services
 * [x] Create components folder
 * [x] Add prop types
-* [x] Build application for production
 * [x] Deploy application on vercel
+* [x] Install Material UI
+* [x] Add Header component
+* [x] Add NavBar
 
 ## API's
 * https://api.themoviedb.org
 
 ## Deployement
 * Vercel
-*Live demo: 
+*Live demo: https://hulu-clone.vercel.app/
 
 ## Test
 
