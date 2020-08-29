@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Navbar />
-      <Content selecetdOption={selecetdOption}/>
+      <Navbar setSelecetdOption={setSelecetdOption} selecetdOption={selecetdOption} />
+      <Content selecetdOption={selecetdOption} />
     </div>
   );
 }

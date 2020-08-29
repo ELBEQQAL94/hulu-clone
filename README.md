@@ -21,8 +21,12 @@
 * [x] Add Header component
 * [x] Add NavBar
 * [x] Add Results
-* [ ] Add filter
-* [ ] Add active class
+* [x] Add filter
+* [x] Add active class
+* [ ] Add Footer
+* [ ] Add Landing page
+* [ ] Add SignUp Page
+* [ ] Add Login Page
 
 ## API's
 ----
@@ -45,4 +49,5 @@
 * [ ] Content
 * [ ] VideoCard
 * [ ] App
+* [ ] Add Footer
 

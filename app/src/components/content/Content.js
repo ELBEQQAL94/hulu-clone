@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Service
-import { instance, request, baseImgUrl } from '../../services';
+import { instance, baseImgUrl } from '../../services';
 
 // Types
 import PropTypes from 'prop-types';
@@ -35,7 +35,7 @@ const Content = ({selecetdOption}) => {
 
     fetchMovies();
 
-  }, []);
+  }, [selecetdOption]);
 
   const renderMovies = () => (
     <div className="content">

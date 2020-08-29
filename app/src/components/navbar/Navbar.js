@@ -1,48 +1,28 @@
 import React from 'react';
 
+// Types
+import PropTypes from 'prop-types';
+
+// Components
+import NavItem from './NavItem';
+
 // Styles
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({selecetdOption, setSelecetdOption}) => {
   return (
     <nav className="nav">
-      <ul>
-        <li className="nav--active">
-          trending
-        </li>
-        <li>
-          top rated
-        </li>
-        <li>
-          action
-        </li>
-        <li>
-          comedy
-        </li>
-        <li>
-          horror
-        </li>
-        <li>
-          romance
-        </li>
-        <li>
-          mystery
-        </li>
-        <li>
-          sci-fi
-        </li>
-        <li>
-          western
-        </li>
-        <li>
-          animation
-        </li>
-        <li>
-          movie
-        </li>
-      </ul>
+      <NavItem
+        selecetdOption={selecetdOption}
+        setSelecetdOption={setSelecetdOption}
+      />
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  setSelecetdOption: PropTypes.string.isRequired,
+  selecetdOption: PropTypes.string.isRequired,
 };
 
 export default Navbar;
