@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <ul>
-        <li>
+        <li className="nav--active">
           trending
         </li>
         <li>

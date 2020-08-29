@@ -1,6 +1,9 @@
 ## Hulu Clone
+----
 
-## TODO
+## TODO:
+----
+
 * [x] Install react app
 * [x] Create repo
 * [x] Get TMDB Api Key
@@ -17,13 +20,29 @@
 * [x] Install Material UI
 * [x] Add Header component
 * [x] Add NavBar
+* [x] Add Results
+* [ ] Add filter
+* [ ] Add active class
 
 ## API's
+----
+
 * https://api.themoviedb.org
 
 ## Deployement
+----
+
 * Vercel
 *Live demo: https://hulu-clone.vercel.app/
 
-## Test
+## Test Components
+----
+
+* [ ] Navbar
+* [ ] Header
+* [ ] LeftContainer
+* [ ] RightContainer
+* [ ] Content
+* [ ] VideoCard
+* [ ] App
 

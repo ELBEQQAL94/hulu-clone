@@ -4,6 +4,7 @@ $white: #fff;
 $hulu-color: #6DE883;
 
 // responsive
+$md: 767px;
 $sm: 575px;
 
 * {
@@ -13,7 +14,7 @@ $sm: 575px;
 }
 
 .App {
-  width: 100vw;
+  // width: 100vw;
   background-image: linear-gradient(
     to right,
     #051421,

@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // requests
-import requests from './services/requests';
+import {request} from './services';
 
 // Components
 import {
   Header,
-  Navbar
+  Navbar,
+  Content,
 } from './components';
 
 
@@ -14,10 +15,12 @@ import {
 import "./App.scss";
 
 function App() {
+  const [selecetdOption, setSelecetdOption] = useState(request.fetchTrending)
   return (
     <div className="App">
       <Header />
       <Navbar />
+      <Content selecetdOption={selecetdOption}/>
     </div>
   );
 }

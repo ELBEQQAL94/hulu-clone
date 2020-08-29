@@ -6,6 +6,9 @@
   color: $white;
   overflow-x: scroll;
   padding: 30px;
+  .nav--active {
+    color: $hulu-color;
+  }
   ul {
     display: flex;
     list-style-type: none;

@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.video__card {
+  color: $white;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+  h2 {
+    max-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1.2em;
+  }
+  &:hover {
+    transform: scale(1.04);
+  }
+  img {
+    padding: 10px;
+    margin-top: 1em;
+    height: 300px;
+    object-fit: contain;
+    width: 400px;
+  }
+}
+
+@media all and (max-width: $md){
+  .video__card {
+    img {
+      width: 393px;
+    }
+  }
+}
+
+@media all and (max-width: $sm){
+  .video__card {
+    padding: 14px;
+    h2 {
+      max-height: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    img {
+      margin-top: 0 !important;
+      height: 300px;
+      object-fit: contain;
+      width: 334px;
+    }
+  }
+}
