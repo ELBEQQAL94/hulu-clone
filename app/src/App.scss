@@ -1,6 +1,19 @@
+$main-color: #000000;
+$white: #fff;
+$hulu-color: #6DE883;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.App {
+  width: 100vw;
+  background-image: linear-gradient(
+    to right,
+    #051421,
+    #042727
+  )
 }
 

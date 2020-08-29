@@ -1,0 +1,64 @@
+@import "../../App.scss";
+
+.header {
+  -ms-overflow-style: none; // IE, Edge
+  scrollbar-width: none; // Firefox
+  padding: 20px;
+  display: flex;
+  color: $white;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  .left__container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .header__icon--active {
+      color: $hulu-color;
+      p {
+        display: inline-flex !important;
+      }
+    }
+    .header__icon {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      transition: all 0.5s linear;
+      cursor: pointer;
+      .MuiSvgIcon-root {
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+      }
+      p {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: small;
+        display: none;
+      }
+      &:hover {
+        color: $hulu-color;
+        p {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  .right__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    .hulu__logo {
+      object-fit: contain;
+      height: 8vh;
+    }
+  }
+  // hide scroll bar on Chrome, Safari, and Opera
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

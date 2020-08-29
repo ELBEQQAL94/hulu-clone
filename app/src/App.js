@@ -4,7 +4,7 @@ import React from "react";
 import requests from "./services/requests";
 
 // Components
-
+import Header from "./components/header";
 
 
 // Styles
@@ -13,7 +13,7 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <h1>Hulu Clone!</h1>
+      <Header />
     </div>
   );
 }
