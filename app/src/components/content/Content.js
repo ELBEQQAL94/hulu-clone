@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import FlipMove from 'react-flip-move';
 
 // Service
 import { instance, baseImgUrl } from '../../services';
@@ -46,11 +47,13 @@ const Content = ({selecetdOption}) => {
         loading ? <CircularProgress />
         :
         movies?.map((movie) => (
-          <VideoCard
-            key={movie.id}
-            movie={movie}
-            baseImgUrl={baseImgUrl}
-          />
+          <FlipMove>
+            <VideoCard
+              key={movie.id}
+              movie={movie}
+              baseImgUrl={baseImgUrl}
+            />
+          </FlipMove>
         ))
       }
     </div>

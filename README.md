@@ -23,7 +23,7 @@
 * [x] Add Results
 * [x] Add filter
 * [x] Add active class
-* [ ] Add Footer
+* [x] Add Footer
 * [ ] Add Landing page
 * [ ] Add SignUp Page
 * [ ] Add Login Page

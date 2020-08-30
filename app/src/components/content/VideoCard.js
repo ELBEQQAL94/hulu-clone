@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 
 // Types
 import PropTypes from 'prop-types';
@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // Styles
 import "./VideoCard.scss";
 
-const VideoCard = ({ movie, baseImgUrl }) => {
+const VideoCard = forwardRef(({ movie, baseImgUrl }, ref) => {
 
   const [loadImag, setLoadImag] = useState(false);
   const {id, backdrop_path, poster_path} = movie;
@@ -14,7 +14,7 @@ const VideoCard = ({ movie, baseImgUrl }) => {
 
 
   return (
-    <div className="video__card">
+    <div ref={ref} className="video__card">
       <h2>{title}</h2>
       <img
         style={loadImag ? {} : {display: 'none'}}
@@ -25,7 +25,7 @@ const VideoCard = ({ movie, baseImgUrl }) => {
       />
     </div>
   );
-};
+});
 
 VideoCard.propTypes = {
   movie: PropTypes.object.isRequired,
